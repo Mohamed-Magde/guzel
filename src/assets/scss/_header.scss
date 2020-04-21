@@ -1,0 +1,22 @@
+.header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#000, 0.6),
+      rgba(#000, 0.2)
+    ),
+    url(../img/img-8.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

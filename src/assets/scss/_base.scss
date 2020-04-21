@@ -1,0 +1,133 @@
+$primary: #d1af94;
+
+$dark: #646464;
+$light-grey: #e4e9ed;
+$text: #777;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  line-height: 1.7;
+  color: #777;
+  background-color: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+// typography
+.heading-1 {
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 0.2em;
+  color: #fff;
+}
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1.5em;
+
+  color: #646464;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.75em;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(#777, 0.2);
+    border-radius: 20px;
+  }
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 0.5em;
+  color: $dark;
+}
+
+///
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  padding: 0.8em 2em;
+  margin-top: 2.5em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid $primary;
+
+  &:hover {
+    color: $primary;
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(#000, 0.25);
+  }
+}
+
+.btn-secondary {
+  color: $dark;
+  background-color: transparent;
+  padding: 0.8em 2em;
+  margin-top: 2.5em;
+  display: block;
+  transition: all 0.5s;
+  border: 2px solid $dark;
+  border-radius: 10px;
+
+  &:hover {
+    color: #fff;
+    border: 2px solid $primary;
+    background-color: $primary;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(#000, 0.25);
+  }
+}
+
+.heading-4 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+  color: #fff;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3em;
+    left: 0;
+    height: 2px;
+    width: 2em;
+    background-color: rgba($primary, 0.5);
+    border-radius: 20px;
+  }
+}
