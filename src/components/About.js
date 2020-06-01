@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef } from "react";
 
 const About = () => {
   const items = [
@@ -46,15 +46,16 @@ const About = () => {
       img: "./img/img-1.jpg",
     },
   ];
+
   return (
     <Fragment>
       <div className="about">
-        <div className="container">
+        <div className="container ">
           <div className="about-grid">
             {items.map((item) => {
               const { id, bg, icon, title, desc } = item;
               return (
-                <div className="about-grid-item" key={id}>
+                <div className="about-grid-item " key={id}>
                   <i className={icon} style={{ background: bg }}></i>
                   <h3 className="heading-3">{title}</h3>
                   <p>{desc}</p>

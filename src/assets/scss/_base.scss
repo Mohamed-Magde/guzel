@@ -47,13 +47,14 @@ img {
   font-weight: normal;
   margin-bottom: 0.2em;
   color: #fff;
+  animation: moveUp 2s;
 }
 
 .heading-2 {
   font-size: 2rem;
   font-weight: 100;
   margin-bottom: 1.5em;
-
+  animation: fade 6s;
   color: #646464;
   position: relative;
   &::after {
@@ -86,6 +87,7 @@ img {
   border-radius: 10px;
   transition: all 0.5s;
   border: 1px solid $primary;
+  animation: moveDown 3s;
 
   &:hover {
     color: $primary;

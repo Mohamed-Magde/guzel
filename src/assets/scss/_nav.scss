@@ -21,7 +21,7 @@
 
     &-item {
       margin-right: 2em;
-      color: #eee;
+      color: $primary;
       transition: all 0.5s;
       &:hover {
         color: $primary;
@@ -57,6 +57,7 @@
   z-index: 9999999;
   transition: all 0.5s;
   box-shadow: 0px 2px 20px rgba(#000, 0.2);
+  animation: moveUp 0.5s;
   .container {
     display: flex;
     align-items: center;
