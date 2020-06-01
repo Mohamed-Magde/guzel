@@ -294,8 +294,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+
     height: 10vh;
     width: 100%;
     background-color: #fff;
@@ -305,6 +304,7 @@
     animation: moveUp 0.5s;
     .container {
       display: flex;
+      height: 100%;
       align-items: center;
       justify-content: space-between;
       width: 90%;
@@ -345,8 +345,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+
     height: 10vh;
     width: 100%;
     background-color: #fff;
@@ -356,6 +355,7 @@
     animation: moveUp 0.5s;
     .container {
       display: flex;
+      height: 100%;
       align-items: center;
       justify-content: space-between;
       width: 75%;
